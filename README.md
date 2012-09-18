@@ -15,7 +15,7 @@ First write some php:
 
 ```php
 // in bar.php
-function bar(){
+function bar($myParam){
 	return something-on-the-server;
 }
 ```
@@ -54,6 +54,23 @@ The next line registers the function to the module.
 * the third parameter is the name of the file where the function can be found.
 
 
+When included with a script tag like so:
+
+```html
+<script type="text/javascript" src="foo.js.php"></script>
+```
+
+The following code will be generated:
+
+```javascript
+SNAP = {
+	foo: function()  // hands the call to PHP.
+}
+
+
+SNAP.foo(someParameter);
+
+```
 
 
 
