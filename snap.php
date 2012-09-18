@@ -143,7 +143,7 @@
 			}
 
 
-			set_error_handler(errHandle);
+			set_error_handler("errHandle");
 
 			$func = NULL;
 			foreach($this->functions as $afunction){
