@@ -57,7 +57,7 @@ The next line registers the function to the module.
 When included with a script tag like so:
 
 ```html
-<script type="text/javascript" src="foo.js.php"></script>
+<script type="text/javascript" src="foo.js.php?mode=js"></script>
 ```
 
 The following code will be generated:
