@@ -76,8 +76,8 @@ SNAP.foo(someParameter);
 Error Handling
 --------------
 
-If there is a PHP error, SNAP will attempt to throw the error as a javascript error. It cannot catch either fatal errors or compile errors. See [this issue](#1)
-
+If there is a PHP error, SNAP will attempt to throw the error as a javascript error. It cannot catch either fatal errors or compile errors.
+See [issue 1](https://github.com/leeavital/SNAP/issues/1)
 
 
 
