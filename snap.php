@@ -104,13 +104,13 @@
 			echo "	xhr.open('post', requestURI, false);\n";
 			echo "	xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');\n";
 			echo "	xhr.send(queryString);\n"; 
-			echo "	console.log('sending query string: ' + queryString);\n"; 
+			// echo "	console.log('sending query string: ' + queryString);\n"; 
 			
 
 			// parse the resopnse.
-			echo "	console.log(xhr.responseText);\n";
+			// echo "	console.log(xhr.responseText);\n";
 			echo "	var response = JSON.parse(xhr.responseText);\n";
-			echo "	console.log(response);\n";
+			// echo "	console.log(response);\n";
 			echo "	if(typeof response.error == 'string'){throw new Error( 'PHP error: ' + response.error)}\n";
 			echo "	else{return response.data};\n";
 			echo "};\n"; // end function call()
