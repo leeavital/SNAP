@@ -113,11 +113,16 @@
 			echo "	console.log(response);\n";
 			echo "	if(typeof response.error == 'string'){throw new Error( 'PHP error: ' + response.error)}\n";
 			echo "	else{return response.data};\n";
-			echo "};"; // end function call()
+			echo "};\n"; // end function call()
 
 
 			//echo "MODULE.foo('Lee');";
-			
+
+			foreach( $this->functions as $func ){
+			   if( ! file_exists( $func["filePath"] ) ){
+				  echo "console.warn( 'A function was not registered because \'{$func["filePath"]}\' does not exist'); \n";
+			   }
+			}
 		}
 
 
