@@ -2,5 +2,6 @@
 
 function bar($name){
 	return "hello " . $name;
+	
 }
 ?>

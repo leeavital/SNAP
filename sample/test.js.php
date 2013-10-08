@@ -1,9 +1,9 @@
 <?php
 
-require "../snap.php";
+require __DIR__ . "/../snap.php";
 
 $module = new SNAPModule("FOOMODULE");
-$module->registerFunction("foo", "bar", "bar.php");
+$module->registerFunction("foo", "bar", __DIR__ . "/bar.php");
 
 SNAPTrigger ($module);
 ?>
